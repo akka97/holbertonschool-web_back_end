@@ -7,7 +7,7 @@ from pymongo import MongoClient
 def count(elements):
     """Count documents inside a collection"""
     client = MongoClient('mongodb://127.0.0.1.27017')
-    collection = clients.logs.nginx
+    collection = client.logs.nginx
     return collection.count_documents(elements)
 
 
