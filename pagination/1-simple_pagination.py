@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
+"""Simpler helper function"""
 import csv
 import math
 from typing import List
-"""Simpler helper function"""
 
 
 def index_range(page, page_size):
-    ''' index range fun'''
+    ''' index range function'''
     start = (page - 1) * page_size
     end = start + page_size
-
     return (start, end)
+
 
 class Server:
     """Server class to paginate a database of popular baby names.
@@ -30,6 +30,7 @@ class Server:
             self.__dataset = dataset[1:]
 
         return self.__dataset
+    
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Returns the appropriate page of the dataset"""
