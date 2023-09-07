@@ -40,8 +40,8 @@ class Server:
         new_dataset = self.dataset()
 
         return new_dataset[idx[0]:idx[1]]
-    
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict
+
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict
     """Hypermedia pagination implemented"""
     assert isinstance(page, int) and isinstance(page_size, int)
     assert page > 0 and page_size > 0
