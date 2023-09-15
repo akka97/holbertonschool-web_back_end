@@ -8,5 +8,4 @@ export default class Car {
   cloneCar() {
     return Object.create(Object.getPrototypeOf(this), Object.getOwnPropertyDescriptors(this));
   }
- }
- 
+}
