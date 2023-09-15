@@ -20,15 +20,15 @@ export class StudentHolberton {
     this._holbertonClass = holbertonClass;
   }
 
-get fullName() {
+  get fullName() {
     return `${this._firstName} ${this._lastName}`;
   }
 
-get holbertonClass() {
+  get holbertonClass() {
     return this._holbertonClass;
   }
 
-get fullStudentDescription() {
+  get fullStudentDescription() {
     return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
   }
 }
