@@ -6,7 +6,7 @@ export default function guardrail(mathFunction) {
     res = mathFunction();
   } catch (error) {
     res = error.toString();
-}
+  }
   queue.push(res);
   queue.push('Guardrail was processed');
   return queue;
