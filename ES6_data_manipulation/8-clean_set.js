@@ -5,9 +5,9 @@ export default function cleanSet(set, startString) {
   }
   set.forEach((element) => {
     if (typeof element !== 'undefined') {
-        if (element.startsWith(startString)) {
-            arr.push(element.split(startString)[1]);
-        }
+      if (element.startsWith(startString)) {
+        arr.push(element.split(startString)[1]);
+      }
     }
   });
   return arr.join('-');
