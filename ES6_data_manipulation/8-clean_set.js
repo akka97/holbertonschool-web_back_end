@@ -11,4 +11,4 @@ module.exports = function cleanSet(set, startString) {
     }
   });
   return arr.join('-');
-}
+};
