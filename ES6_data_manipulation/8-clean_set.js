@@ -1,7 +1,7 @@
 export default function cleanSet(set, startString) {
   const arr = [];
   if (typeof startString === 'undefined' || startString === '' || typeof startString !== 'string') {
-    return ' ';
+    return '';
   }
   set.forEach((element) => {
     if (typeof element !== 'undefined') {
@@ -10,5 +10,5 @@ export default function cleanSet(set, startString) {
       }
     }
   });
-  return arr.join('-');
+  return arr.join(' - ');
 }
