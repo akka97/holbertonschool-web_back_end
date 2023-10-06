@@ -1,4 +1,4 @@
-export default function cleanSet(set, startString) {
+module.exports = function cleanSet(set, startString) {
   const arr = [];
   if (typeof startString === 'undefined' || startString === '' || typeof startString !== 'string') {
     return '';
